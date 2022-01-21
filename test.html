@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./teststyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="warn" style="width: 100%">
+        <h3
+          class="warnning"
+          style="
+            padding: 15px 15px 15px 15px;
+            font-size: 16px;
+            color: rgb(211, 211, 39);
+          "
+        >
+          if you refresh the page then you will lost all the progress you have
+          made
+        </h3>
+      </header>
+      <div class="all-in">
+        <section class="scores_turn">
+          <div class="high-score">
+            <h1 class="my-score"></h1>
+            <h5>H-score</h5>
+          </div>
+          <div class="turns">
+            <h1 class="my-turns">20</h1>
+            <h5>turns</h5>
+          </div>
+          <input type="button" value="Restart" class="restart" />
+        </section>
+        <section class="main-game">
+          <header
+            class="message-box"
+            style="
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <h2 class="msg-guide"></h2>
+          </header>
+          <div class="container">
+            <header class="message"><h2>guess the number</h2></header>
+            <div class="content">
+              <div class="line"></div>
+              <div class="wrap">
+                <img
+                  class="img"
+                  src="./question-mark.svg"
+                  alt="question mark"
+                />
+                <h2 class="random-number">20</h2>
+              </div>
+            </div>
+            <div class="input-sec">
+              <input
+                type="number"
+                max="20"
+                min="0"
+                name="input"
+                id="inpt"
+                class="num-input"
+              />
+              <input type="button" value="check?" class="guess-btn" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="./test.js"></script>
+  </body>
+</html>
